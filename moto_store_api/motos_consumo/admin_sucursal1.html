@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucursal 1 - Motos Disponibles</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="header-title" class="title-left">Leon's Motos - Sucursal 1</h1>
+        <button class="action-button" onclick="window.location.href='agregar_moto.html'">Agregar Nueva Moto</button>
+        <button class="action-button" onclick="window.location.href='inventario.html'">Inventario</button>
+    </header>
+    
+    <div class="controls">
+        <select name="select" id="select">
+            <option value="http://192.168.0.34:5000/api/motos?sucursal=1" selected>Leon's Motors</option>
+            <option value="http://192.168.0.241:5000pi/motos?sucursal=2">Morgans Motors</option>
+        </select>
+        <input type="text" id="search-input" placeholder="Buscar moto por marca o modelo...">
+    </div>
+
+    <main>
+        <section id="moto-container" class="cards-container">
+            <!-- Las motos se cargarán aquí dinámicamente -->
+        </section>
+    </main>
+    <script src="js/sucursal1.js"></script>
+</body>
+</html>
